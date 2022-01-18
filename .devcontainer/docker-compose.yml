@@ -1,0 +1,12 @@
+version: '3'
+services:
+  node:
+    container_name: node_app
+    build: .
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    ports:
+      - 3000:3000
+      - 15000:15000
+    volumes:
+      - ../:/home/node/app:cached
+      - $HOME/.ssh:/home/node/.ssh

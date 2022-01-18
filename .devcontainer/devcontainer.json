@@ -1,0 +1,14 @@
+{
+    "name": "App",
+    "dockerComposeFile": ["./docker-compose.yml"],
+    "service": "node",
+	"extensions": [
+		"svelte.svelte-vscode"
+	],
+	"settings": {
+		"terminal.integrated.defaultProfile.linux": "bash",
+	},
+	"postCreateCommand": "yarn install",
+	"remoteUser": "node",
+	"workspaceFolder": "/home/node/app",
+}
